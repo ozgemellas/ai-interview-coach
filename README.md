@@ -8,7 +8,7 @@ Sistem, en son teknoloji **Generative AI (Üretken Yapay Zeka)**, **Ses Sentezle
 
 ![Sohbet Arayüzü](assets/final_demo_chat.png)
 
-## One Cikan Ozellikler
+## Öne Çıkan Özellikler
 
 *   **Yerel ve Akilli Zeka (Local LLM):** Meta'nın güçlü **Llama 3 8B Instruct** modelini (`Q4_K_M` quantization ile) kullanarak, internet bağlantısına ihtiyaç duymadan, KVKK uyumlu ve gizli bir mülakat deneyimi sunar.
 *   **Dogal Ses Deneyimi (TTS):** Microsoft Edge'in `en-US-AriaNeural` (veya Türkçe varyasyonları) motorunu kullanarak robottan uzak, vurgulamalı ve doğal bir konuşma sesi üretir.
@@ -42,7 +42,7 @@ Kullanıcı deneyiminin aktığı modern web arayüzü.
 *   **Styling:** `TailwindCSS v4`.
 *   **3D Graphics:** `Three.js`, `@react-three/fiber`, `@react-three/drei`.
 
-## Detayli Proje Yapisi
+## Detaylı Proje Yapısı
 
 ```
 ozgellmfinal/
@@ -63,15 +63,15 @@ ozgellmfinal/
 ├── ai_interview_coach.ipynb # Model Ar-Ge ve Prompt Mühendisliği notları
 ```
 
-## Kurulum ve Calistirma Rehberi
+## Kurulum ve Çalıştırma Rehberi
 
 ### On Gereksinimler
 *   **OS:** Windows 10/11.
 *   **Runtime:** Python 3.10+, Node.js 18+.
-*   **Donanim:** Min 8GB RAM.
+*   **Donanım:** Min 8GB RAM.
 *   **Dosya:** `llama-3-8b-instruct.Q4_K_M.gguf` ana dizinde olmalı.
 
-### Adim Adim Kurulum
+### Adım Adım Kurulum
 
 #### 1. Projeyi Klonlayin
 ```bash
@@ -93,18 +93,18 @@ npm install
 cd ..
 ```
 
-### Uygulamayi Baslatma
+### Uygulamayı Başlatma
 
-**Manuel Baslatma:**
+**Manuel Başlatma:**
 *   Backend: `cd backend && python main.py`
 *   Frontend: `cd frontend && npm run dev`
 
-## Dokumentasyon
+## Dokümentasyon
 Modelin eğitim süreci `ai_interview_coach.ipynb` dosyalarını inceleyebilirsiniz.
 
-## Lisans ve Iletisim
+## Lisans ve İletişim
 
-*   **Gelistirici:** [Özge Mellaş]
+*   **Geliştirici:** [Özge Mellaş]
 *   **Lisans:** MIT & Meta Llama 3 Community License.
 
 ---

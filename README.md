@@ -2,9 +2,9 @@
 
 **AI Interview Coach**, iş görüşmelerine hazırlanan adayların mülakat stresini yenmelerine ve iletişim yeteneklerini geliştirmelerine yardımcı olmak amacıyla tasarlanmış, **Gizlilik Odaklı (Privacy-First)** ve **Yapay Zeka Destekli** yenilikçi bir mülakat simülasyon platformudur.
 
-Günümüzde mülakat provaları genellikle ya maliyetli danışmanlıklar gerektirir ya da statik, gerçekçilikten uzak yöntemlerle yapılır. Bu proje, **tamamen yerel makinenizde (Localhost)** çalışan yapısı sayesinde, kişisel verilerinizi veya ses kayıtlarınızı hiçbir üçüncü parti sunucuya göndermeden, güvenli bir "Sandbox" ortamı sunar.
+Günümüzde mülakat provaları genellikle ya maliyetli danışmanlıklar gerektirir ya da statik, gerçekçilikten uzak yöntemlerle yapılır. Bu proje, **tamamen yerel makinenizde (Localhost)** çalışan yapısı sayesinde, kişisel verilerinizi hiçbir üçüncü parti sunucuya göndermeden, güvenli bir "Sandbox" ortamı sunar.
 
-Sistem, en son teknoloji **Generative AI (Üretken Yapay Zeka)**, **Ses Sentezleme** ve **3D Görselleştirme** tekniklerini birleştirerek, karşınızda sizi dinleyen, analiz eden ve mantıklı geri bildirimler veren sanal bir İnsan Kaynakları uzmanı ("Özge") simüle eder.
+Sistem, en son teknoloji **Generative AI (Üretken Yapay Zeka)**, **Ses Sentezleme** ve **3D Görselleştirme** tekniklerini birleştirerek, karşınızda sizi dinleyen, analiz eden ve mantıklı geri bildirimler veren sanal bir İnsan Kaynakları uzmanı simüle eder.
 
 ![Sohbet Arayüzü](assets/final_demo_chat.png)
 
@@ -97,15 +97,12 @@ cd ..
 
 ### Uygulamayi Baslatma
 
-**Otomatik Baslatma:**
-`tek_tikla_baslat.bat` dosyasına çift tıklayın.
-
 **Manuel Baslatma:**
 *   Backend: `cd backend && python main.py`
 *   Frontend: `cd frontend && npm run dev`
 
 ## Dokumentasyon
-Modelin eğitim süreci ve teorik altyapısı için `LLM_Rapor.pdf` ve `ai_interview_coach.ipynb` dosyalarını inceleyebilirsiniz.
+Modelin eğitim süreci `ai_interview_coach.ipynb` dosyalarını inceleyebilirsiniz.
 
 ## Lisans ve Iletisim
 

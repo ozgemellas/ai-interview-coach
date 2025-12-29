@@ -60,8 +60,6 @@ ozgellmfinal/
 │   ├── vite.config.ts       # Vite yapılandırması
 │   └── package.json         # NPM paketleri
 ├── ai_interview_coach.ipynb # Model Ar-Ge ve Prompt Mühendisliği notları
-├── LLM_Rapor.pdf            # Akademik/Teknik Proje Raporu
-├── tek_tikla_baslat.bat     # Windows için Otomatik Başlatıcı
 └── llama-3-8b-instruct.Q4_K_M.gguf # ONEMLI: Büyük Dil Modeli Dosyası
 ```
 

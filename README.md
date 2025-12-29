@@ -123,16 +123,30 @@ npm run dev
 ```
 *Frontend `http://localhost:5173` (veya terminalde belirtilen port) adresinde çalışacaktır.*
 
-## � Sorun Giderme (Troubleshooting)
+## 🐛 Sorun Giderme (Troubleshooting)
 
 *   **"Model file not found" hatası:** `llama-3-8b-instruct.Q4_K_M.gguf` dosyasının tam olarak `ozgellmfinal` klasörünün içinde (backend veya frontend klasörünün içinde DEĞİL) olduğunu kontrol edin.
 *   **Ses gelmiyor:** Tarayıcınızın "Otomatik Oynatma" (Autoplay) izinlerini kontrol edin. Genellikle sayfaya bir kez tıkladıktan sonra sesler aktif olur.
 *   **C++ Build Tools Hatası:** Python paketlerini yüklerken hata alırsanız, bilgisayarınızda "Visual Studio C++ Build Tools"un yüklü olduğundan emin olun (özellikle `llama-cpp-python` için gereklidir).
 
-## � Lisans ve İletişim
+## 🖼️ Proje Görselleri
+
+### Sohbet Arayüzü (Demo)
+![Sohbet Arayüzü](final_demo_chat.png)
+
+### Sistem Mimarisi
+![Sistem Mimarisi](architecture.png)
+
+### Mülakat Analizi ve Transkript
+![Mülakat Transkripti](transcript_view.png)
+
+## 📊 Proje Raporu/Dokümantasyon
+Modelin eğitim süreci, performans metrikleri ve teorik altyapısı hakkında detaylı bilgi için ana dizindeki `LLM_Rapor.pdf` ve `ai_interview_coach.ipynb` dosyalarını inceleyebilirsiniz.
+
+## 🔒 Lisans ve İletişim
 
 Bu proje açık kaynaklıdır ve eğitim amaçlı geliştirilmiştir. 
-*   **Geliştirici:** [Adınız/Ekibiniz]
+*   **Geliştirici:** [Özge Mellaş]
 *   **Model Lisansı:** Meta Llama 3 Community License.
 
 ---

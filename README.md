@@ -61,7 +61,6 @@ ozgellmfinal/
 │   ├── vite.config.ts       # Vite yapılandırması
 │   └── package.json         # NPM paketleri
 ├── ai_interview_coach.ipynb # Model Ar-Ge ve Prompt Mühendisliği notları
-└── llama-3-8b-instruct.Q4_K_M.gguf # ONEMLI: Büyük Dil Modeli Dosyası
 ```
 
 ## Kurulum ve Calistirma Rehberi

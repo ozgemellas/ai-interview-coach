@@ -1,27 +1,29 @@
 # AI Interview Coach (ÖzgeLLM Final)
 
-Bu proje, en son teknoloji **Yapay Zeka** ve **Web Teknolojilerini** birleştirerek oluşturulmuş, tamamen yerel makinenizde çalışan (Privacy-First) devrimsel bir **Sanal Mülakat Koçu** uygulamasıdır. 
+**AI Interview Coach**, iş görüşmelerine hazırlanan adayların mülakat stresini yenmelerine ve iletişim yeteneklerini geliştirmelerine yardımcı olmak amacıyla tasarlanmış, **Gizlilik Odaklı (Privacy-First)** ve **Yapay Zeka Destekli** yenilikçi bir mülakat simülasyon platformudur.
 
-Kullanıcılara gerçek bir İnsan Kaynakları uzmanı ile konuşuyormuş hissi vermek için **Llama 3** dil modeli, **Edge-TTS** ses sentezleme teknolojisi ve **React Three Fiber** tabanlı 3D avatar görselleştirmesi kullanır.
+Günümüzde mülakat provaları genellikle ya maliyetli danışmanlıklar gerektirir ya da statik, gerçekçilikten uzak yöntemlerle yapılır. Bu proje, **tamamen yerel makinenizde (Localhost)** çalışan yapısı sayesinde, kişisel verilerinizi veya ses kayıtlarınızı hiçbir üçüncü parti sunucuya göndermeden, güvenli bir "Sandbox" ortamı sunar.
 
-![Sohbet Arayüzü](final_demo_chat.png)
+Sistem, en son teknoloji **Generative AI (Üretken Yapay Zeka)**, **Ses Sentezleme** ve **3D Görselleştirme** tekniklerini birleştirerek, karşınızda sizi dinleyen, analiz eden ve mantıklı geri bildirimler veren sanal bir İnsan Kaynakları uzmanı ("Özge") simüle eder.
 
-## 🌟 Öne Çıkan Özellikler
+![Sohbet Arayüzü](assets/final_demo_chat.png)
 
-*   **🧠 Yerel ve Akıllı Zeka (Local LLM):** Meta'nın güçlü **Llama 3 8B Instruct** modelini (`Q4_K_M` quantization ile) kullanarak, internet bağlantısına ihtiyaç duymadan, KVKK uyumlu ve gizli bir mülakat deneyimi sunar.
-*   **🗣️ Doğal Ses Deneyimi (TTS):** Microsoft Edge'in `en-US-AriaNeural` (veya Türkçe varyasyonları) motorunu kullanarak robottan uzak, vurgulamalı ve doğal bir konuşma sesi üretir.
-*   **👤 3D Sanal Avatar:** `React Three Fiber` ve `Drei` kütüphaneleri ile güçlendirilmiş, tarayıcı üzerinde çalışan interaktif bir 3D karakter.
-*   **⚡ Düşük Gecikme (Low Latency):** `FastAPI` ve asenkron (`async/await`) mimari sayesinde anlık cevaplar.
-*   **📄 PDF Raporlama:** Mülakat sonunda performansınızı analiz eden çıktılar alabilme (`jspdf` entegrasyonu).
+## One Cikan Ozellikler
 
-![Mülakat Analizi](transcript_view.png)
+*   **Yerel ve Akilli Zeka (Local LLM):** Meta'nın güçlü **Llama 3 8B Instruct** modelini (`Q4_K_M` quantization ile) kullanarak, internet bağlantısına ihtiyaç duymadan, KVKK uyumlu ve gizli bir mülakat deneyimi sunar.
+*   **Dogal Ses Deneyimi (TTS):** Microsoft Edge'in `en-US-AriaNeural` (veya Türkçe varyasyonları) motorunu kullanarak robottan uzak, vurgulamalı ve doğal bir konuşma sesi üretir.
+*   **3D Sanal Avatar:** `React Three Fiber` ve `Drei` kütüphaneleri ile güçlendirilmiş, tarayıcı üzerinde çalışan interaktif bir 3D karakter.
+*   **Dusuk Gecikme (Low Latency):** `FastAPI` ve asenkron (`async/await`) mimari sayesinde anlık cevaplar.
+*   **PDF Raporlama:** Mülakat sonunda performansınızı analiz eden çıktılar alabilme (`jspdf` entegrasyonu).
+
+![Mulakat Analizi](assets/transcript_view.png)
 *Mülakat sonrası detaylı analiz ve transkript ekranı.*
 
-## 🏗️ Mimari ve Teknolojiler
+## Mimari ve Teknolojiler
 
 Proje, modern ve ölçeklenebilir bir **Microservice** (benzeri) mimari üzerine kurulmuştur:
 
-![Sistem Mimarisi](architecture.png)
+![Sistem Mimarisi](assets/architecture.png)
 
 ### Backend (Python & AI)
 Sunucu tarafı, yapay zeka işlemlerini yönetir ve frontend ile API aracılığıyla haberleşir.
@@ -39,15 +41,16 @@ Kullanıcı deneyiminin aktığı modern web arayüzü.
 *   **Styling:** `TailwindCSS v4`.
 *   **3D Graphics:** `Three.js`, `@react-three/fiber`, `@react-three/drei`.
 
-## 📂 Detaylı Proje Yapısı
+## Detayli Proje Yapisi
 
 ```
 ozgellmfinal/
-├── backend/                  # ARKA UÇ (Logic & AI)
+├── assets/                   # Proje Gorselleri
+├── backend/                  # ARKA UC (Logic & AI)
 │   ├── main.py              # API Gateway (Endpoints: /chat)
 │   ├── services.py          # LLM ve TTS servislerinin mantıksal katmanı
 │   └── requirements.txt     # Python kütüphane bağımlılıkları
-├── frontend/                 # ÖN YÜZ (UI & UX)
+├── frontend/                 # ON YUZ (UI & UX)
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── ChatInterface.tsx  # Ana sohbet ekranı
@@ -59,20 +62,20 @@ ozgellmfinal/
 ├── ai_interview_coach.ipynb # Model Ar-Ge ve Prompt Mühendisliği notları
 ├── LLM_Rapor.pdf            # Akademik/Teknik Proje Raporu
 ├── tek_tikla_baslat.bat     # Windows için Otomatik Başlatıcı
-└── llama-3-8b-instruct.Q4_K_M.gguf # ÖNEMLİ: Büyük Dil Modeli Dosyası
+└── llama-3-8b-instruct.Q4_K_M.gguf # ONEMLI: Büyük Dil Modeli Dosyası
 ```
 
-## ⚙️ Kurulum ve Çalıştırma Rehberi
+## Kurulum ve Calistirma Rehberi
 
-### Ön Gereksinimler
+### On Gereksinimler
 *   **OS:** Windows 10/11.
 *   **Runtime:** Python 3.10+, Node.js 18+.
-*   **Donanım:** Min 8GB RAM.
+*   **Donanim:** Min 8GB RAM.
 *   **Dosya:** `llama-3-8b-instruct.Q4_K_M.gguf` ana dizinde olmalı.
 
-### Adım Adım Kurulum
+### Adim Adim Kurulum
 
-#### 1. Projeyi Klonlayın
+#### 1. Projeyi Klonlayin
 ```bash
 git clone https://github.com/kullaniciadi/ozgellmfinal.git
 cd ozgellmfinal
@@ -92,21 +95,21 @@ npm install
 cd ..
 ```
 
-### 🚀 Uygulamayı Başlatma
+### Uygulamayi Baslatma
 
-**Otomatik Başlatma:**
+**Otomatik Baslatma:**
 `tek_tikla_baslat.bat` dosyasına çift tıklayın.
 
-**Manuel Başlatma:**
+**Manuel Baslatma:**
 *   Backend: `cd backend && python main.py`
 *   Frontend: `cd frontend && npm run dev`
 
-## 📊 Dokümantasyon
+## Dokumentasyon
 Modelin eğitim süreci ve teorik altyapısı için `LLM_Rapor.pdf` ve `ai_interview_coach.ipynb` dosyalarını inceleyebilirsiniz.
 
-## 🔒 Lisans ve İletişim
+## Lisans ve Iletisim
 
-*   **Geliştirici:** [Özge Mellaş]
+*   **Gelistirici:** [Özge Mellaş]
 *   **Lisans:** MIT & Meta Llama 3 Community License.
 
 ---

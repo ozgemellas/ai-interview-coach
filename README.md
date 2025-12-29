@@ -4,7 +4,7 @@
 
 Günümüzde mülakat provaları genellikle ya maliyetli danışmanlıklar gerektirir ya da statik, gerçekçilikten uzak yöntemlerle yapılır. Bu proje, **tamamen yerel makinenizde (Localhost)** çalışan yapısı sayesinde, kişisel verilerinizi hiçbir üçüncü parti sunucuya göndermeden, güvenli bir "Sandbox" ortamı sunar.
 
-Sistem, en son teknoloji **Generative AI (Üretken Yapay Zeka)**, **Ses Sentezleme** ve **3D Görselleştirme** tekniklerini birleştirerek, karşınızda sizi dinleyen, analiz eden ve mantıklı geri bildirimler veren sanal bir İnsan Kaynakları uzmanı simüle eder.
+Sistem, en son teknoloji **Generative AI (Üretken Yapay Zeka)**, **Ses Sentezleme** ve **3D Görselleştirme** tekniklerini birleştirerek, karşınızda sizi analiz eden ve mantıklı geri bildirimler veren sanal bir İnsan Kaynakları uzmanı simüle eder.
 
 ![Sohbet Arayüzü](assets/final_demo_chat.png)
 

@@ -1,4 +1,4 @@
-# AI Interview Coach (ÖzgeLLM Final)
+# AI Interview Coach
 
 **AI Interview Coach**, iş görüşmelerine hazırlanan adayların mülakat stresini yenmelerine ve iletişim yeteneklerini geliştirmelerine yardımcı olmak amacıyla tasarlanmış, **Gizlilik Odaklı (Privacy-First)** ve **Yapay Zeka Destekli** yenilikçi bir mülakat simülasyon platformudur.
 

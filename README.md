@@ -17,6 +17,7 @@ Sistem, en son teknoloji **Generative AI (Üretken Yapay Zeka)**, **Ses Sentezle
 *   **PDF Raporlama:** Mülakat sonunda performansınızı analiz eden çıktılar alabilme (`jspdf` entegrasyonu).
 
 ![Mulakat Analizi](assets/transcript_view.png)
+
 *Mülakat sonrası detaylı analiz ve transkript ekranı.*
 
 ## Mimari ve Teknolojiler
